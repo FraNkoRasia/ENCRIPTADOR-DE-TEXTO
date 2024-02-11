@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador de Texto</title>
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="encriptar">
+
+      <a href="https://www.aluracursos.com/">
+        <img class="logo-alura" src="img/logo alura.png" alt="">
+      </a>
+
+      <h1 class="tituloWeb">Encriptador de Texto</h1>
+      <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+        placeholder="Ingrese el texto a encriptar..."></textarea>
+
+      <div class="terminos">
+        <p>Solo letras minúsculas y sin acentos.</p>
+      </div>
+      <div class="botones">
+        <button class="btn-encriptar" type="button" onclick="encriptar()">
+          Encriptar
+        </button>
+        <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()" />
+          
+      </div>
+      
+    </div>
+    <div class="encriptado">
+      <img src="img/imagen.png" alt="" id="imagen" />
+      <div class="mensaje-encriptado" id="mensaje-encriptado">
+        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+        <p id="parrafo">
+          Ingresa el texto que deseas encriptar o desencriptar
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+   
+    <p id="redes">Mis Redes Sociales</p>
+    <a href="https://www.linkedin.com/in/francorasia" style="display: inline-block; vertical-align: middle;">
+      <img class="linkedin" src="img/linkedin.png" alt="imagen de linkedin">
+    </a>
+    <a href="https://github.com/FraNkoRasia" style="display: inline-block; vertical-align: middle;">
+      <img class="github" src="img/github.png" alt="imagen de github">
+    </a>
+    
+    <p>Web Desarrollada por RASIA FRANCO </p>
+    <p align="center">&copy; Todos los derechos reservados | Rasia Franco 2024</p>
+  </footer>
+</body>
+<script src="encriptador.js"></script>
+
+</html>
