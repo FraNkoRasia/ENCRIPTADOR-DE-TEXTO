@@ -42,6 +42,8 @@
     background-image: url(img/fondo-tec2.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Evita que la imagen se desplace con el scroll */
 }
 
 .texto {
@@ -238,12 +240,13 @@
 }
 
 footer {
-    padding: 20px;
-    /* Agrega espaciado interno superior e inferior al footer */
-    text-align: center;
-    /* Centra el contenido del footer */
-    background: linear-gradient(rgb(177, 182, 187), rgb(44, 41, 41));
-    font-size: 22px;
+   
+    bottom: 0; /* Lo posiciona en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 20px; /* Agrega espaciado interno */
+    text-align: center; /* Centra el contenido */
+    background: linear-gradient(rgba(177, 182, 187, 0.8), rgba(44, 41, 41, 0.8)); /* Fondo del footer con transparencia */
+    font-size: 22px; /* Tamaño del texto */
 }
 
 footer img {
