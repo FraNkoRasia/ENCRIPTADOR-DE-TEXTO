@@ -7,7 +7,7 @@
 
 .logo-alura {
     position: absolute;
-    max-width: 350px;
+    max-width: 300px;
     margin-left: 30px;
     margin-top: 1px;
     transition: transform 0.5s ease;
@@ -18,21 +18,25 @@
 }
 
 .tituloWeb {
+
+    position: absolute;
     font-size: 50px;
     color: beige;
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     /* Alinea el texto al centro */
-    margin-right: 40%;
+    margin-left: 30%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 5px 5px 50px blue;
 }
 
 .container {
+    display: flex;
     position: relative;
-    width: 100vw;
-    height: calc(100vh - 100px); /* Resta la altura del footer */
-   
+    width: 100%;
+    height: calc(100vh - 100px);
+    /* Resta la altura del footer */
+
     /* El resto de tu código CSS aquí */
     /*Alto */
 
@@ -44,10 +48,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Evita que la imagen se desplace con el scroll */
+    background-attachment: fixed;
+    /* Evita que la imagen se desplace con el scroll */
 }
 
 .texto {
+    margin-top: 20px;
     border-radius: 3%;
     padding: 15px;
     position: absolute;
@@ -80,14 +86,11 @@
 
 .terminos {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
+
     position: absolute;
-    width: 80%;
+
     left: 12%;
-    top: 80%;
+    top: 78%;
 
 }
 
@@ -173,10 +176,10 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 30%;
-    height: 90%;
+    width: 25%;
+    height: 80%;
     left: 60%;
-    top: 5%;
+    top: 15%;
     border-radius: 30px;
     /* creo un RADIO DEGRADADO DE NEGRO A VERDE */
     background: radial-gradient(circle, #5808c9, #030101);
@@ -241,12 +244,14 @@
 }
 
 footer {
-    bottom: 0; /* Lo posiciona en la parte inferior */
-    width: 100%; /* Ocupa todo el ancho */
-    padding: 20px; /* Agrega espaciado interno */
-    text-align: center; /* Centra el contenido */
-    background: linear-gradient(rgba(177, 182, 187, 0.8), rgba(44, 41, 41, 0.8)); /* Fondo del footer con transparencia */
-    font-size: 22px; /* Tamaño del texto */
+    padding: 10px;
+    /* Agrega espaciado interno */
+    text-align: center;
+    /* Centra el contenido */
+    background: linear-gradient(rgba(177, 182, 187, 0.8), rgba(44, 41, 41, 0.8));
+    /* Fondo del footer con transparencia */
+    font-size: 22px;
+    /* Tamaño del texto */
 }
 
 footer img {
@@ -266,7 +271,8 @@ footer img:hover {
     font-style: italic;
 }
 
-@media (max-width: 57.5em) {
+
+@media only screen and (max-width: 480px) {
     .container {
         display: flex;
         flex-direction: row;
@@ -341,6 +347,10 @@ footer img:hover {
         top: 5%;
     }
 
+    #titulo-mensaje {
+        margin: -10px;
+    }
+
     #parrafo {
         margin: -15px;
     }
@@ -359,37 +369,17 @@ footer img:hover {
     #mensaje-encriptado {
         padding: 1px;
     }
-}
 
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 90%; /* Largura relativa para tablets */
-        padding: 0 20px; /* Adiciona espaçamento lateral */
+    #redes {
+        font-size: 19px;
     }
 
-    .logo-alura {
-        max-width: 200px; /* Reduz o tamanho do logo para telas menores */
-    }
-}
-@media only screen and (max-width: 480px) {
-    .container {
-        width: 100%; /* Largura total para smartphones */
+    .linkedin,
+    .github {
+        width: 150px;
     }
 
-    .logo-alura {
-        max-width: 150px; /* Reduz ainda mais o tamanho do logo para smartphones */
-    }
-
-    .tituloWeb {
-        font-size: 30px; /* Reduz o tamanho do título para smartphones */
-        padding: 20px; /* Reduz o espaçamento ao redor do título */
-        margin-right: 0; /* Remove a margem à direita do título */
-    }
-
-    .texto {
-        width: 90%; /* Aumenta a largura do campo de texto para smartphones */
-        left: 5%; /* Centraliza o campo de texto */
-        top: 10%; /* Move o campo de texto para cima */
-        font-size: 16px; /* Reduz o tamanho da fonte para smartphones */
+    footer {
+        font-size: 17px;
     }
 }
