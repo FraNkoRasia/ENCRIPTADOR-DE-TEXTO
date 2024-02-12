@@ -7,9 +7,9 @@
 
 .logo-alura {
     position: absolute;
-    max-width: 60px;
-    margin-left: 70px;
-    margin-top: 50px;
+    max-width: 350px;
+    margin-left: 30px;
+    margin-top: 1px;
     transition: transform 0.5s ease;
 }
 
@@ -31,8 +31,9 @@
 .container {
     position: relative;
     width: 100vw;
-    /*Ancho */
-    height: 100vh;
+    height: calc(100vh - 100px); /* Resta la altura del footer */
+   
+    /* El resto de tu código CSS aquí */
     /*Alto */
 
     /* background: rgb(182, 195, 211);
@@ -240,7 +241,6 @@
 }
 
 footer {
-   
     bottom: 0; /* Lo posiciona en la parte inferior */
     width: 100%; /* Ocupa todo el ancho */
     padding: 20px; /* Agrega espaciado interno */
@@ -358,5 +358,38 @@ footer img:hover {
 
     #mensaje-encriptado {
         padding: 1px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura relativa para tablets */
+        padding: 0 20px; /* Adiciona espaçamento lateral */
+    }
+
+    .logo-alura {
+        max-width: 200px; /* Reduz o tamanho do logo para telas menores */
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%; /* Largura total para smartphones */
+    }
+
+    .logo-alura {
+        max-width: 150px; /* Reduz ainda mais o tamanho do logo para smartphones */
+    }
+
+    .tituloWeb {
+        font-size: 30px; /* Reduz o tamanho do título para smartphones */
+        padding: 20px; /* Reduz o espaçamento ao redor do título */
+        margin-right: 0; /* Remove a margem à direita do título */
+    }
+
+    .texto {
+        width: 90%; /* Aumenta a largura do campo de texto para smartphones */
+        left: 5%; /* Centraliza o campo de texto */
+        top: 10%; /* Move o campo de texto para cima */
+        font-size: 16px; /* Reduz o tamanho da fonte para smartphones */
     }
 }
