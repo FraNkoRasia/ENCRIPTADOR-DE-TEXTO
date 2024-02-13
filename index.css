@@ -381,13 +381,15 @@ footer img:hover {
         top: 70%;
         padding: 15px;
     }
+    
 
     .btn-encriptar,
     .btn-desencriptar {
         width: 50%;
         border-radius: 16px;
         font-size: 15px;
-       
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .btn-encriptar:hover,
