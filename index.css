@@ -17,18 +17,17 @@
     transform: scale(1.2);
 }
 
-.tituloWeb {
 
+.tituloWeb {
     position: absolute;
+    margin-left: 30%;
     font-size: 50px;
     color: beige;
-    padding: 20px;
     text-align: center;
-    /* Alinea el texto al centro */
-    margin-left: 30%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 5px 5px 50px blue;
 }
+
 
 .container {
     display: flex;
@@ -86,25 +85,19 @@
 
 .terminos {
     display: flex;
-
+    text-shadow: 2px 2px 2px black;
     position: absolute;
-
     left: 12%;
     top: 78%;
-
 }
 
 .terminos p {
+    margin-top: 10px;
     color: beige;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 150%;
-
-
-
-
-
 }
 
 .botones {
@@ -177,7 +170,7 @@
     justify-content: center;
     position: absolute;
     width: 25%;
-    height: 80%;
+    height: 65%;
     left: 60%;
     top: 15%;
     border-radius: 30px;
@@ -188,14 +181,23 @@
 
 }
 
+#imagen {
+    margin: -60px;
+    width: 65%;
+    /* Hace que la imagen ocupe el ancho completo de su contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+    max-width: 70%;
+    /* Evita que la imagen se estire más allá de su tamaño natural */
+}
+
 .mensaje-encriptado {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10%;
-    gap: 16px;
+
     position: absolute;
     width: 100%;
     top: 65%;
@@ -271,17 +273,12 @@ footer img:hover {
     font-style: italic;
 }
 
-
-@media only screen and (max-width: 480px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-    }
-
+@media only screen and (max-width: 1418px) {
     .logo-alura {
         position: absolute;
-        max-width: 20px;
-        margin-left: 20px;
+        max-width: 250px;
+        margin-left: 0;
+        /* Cambiado de 20px a 0 */
         margin-top: 20px;
         transition: transform 0.5s ease;
     }
@@ -290,30 +287,95 @@ footer img:hover {
         transform: scale(1.2);
     }
 
+    .encriptado {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 25%;
+        height: 65%;
+        left: 60%;
+        top: 15%;
+        border-radius: 30px;
+        /* creo un RADIO DEGRADADO DE NEGRO A VERDE */
+        background: radial-gradient(circle, #5808c9, #030101);
+        opacity: 0.9;
+
+    }
+
+    #imagen {
+        margin: -20px;
+        width: 65%;
+        /* Hace que la imagen ocupe el ancho completo de su contenedor */
+        height: auto;
+        /* Mantiene la proporción de aspecto de la imagen */
+        max-width: 70%;
+        /* Evita que la imagen se estire más allá de su tamaño natural */
+    }
+
+    #titulo-mensaje {
+        font-size: 17px;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 914px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo-alura {
+
+        max-width: 300px;
+        margin-left: 10px;
+        /* Cambiado de 20px a 0 */
+        margin-top: 20px;
+        transition: transform 0.5s ease;
+    }
+
+    .logo-alura:hover {
+        transform: scale(1.2);
+    }
+
+    .tituloWeb {
+        font-size: 30px;
+        margin-left: 40%;
+        margin-top: 3%;
+    }
+
     .encriptar {
         width: 100%;
     }
 
     .texto {
+        margin-top: 90px;
         width: 80%;
-        height: 60%;
+        height: 50%;
         left: 10%;
         top: 5%;
     }
 
     .terminos {
+        margin-top: 20px;
         width: 80%;
-        left: 10%;
+        left: 12%;
         top: 67%;
         padding: 15px 0 15px 0;
+        text-shadow: 2px 2px 2px black;
     }
 
     .terminos p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .botones {
-        width: 80%;
+        margin-top: 30px;
+        width: 70%;
         left: 10%;
         top: 70%;
         padding: 15px;
@@ -334,25 +396,20 @@ footer img:hover {
     }
 
     .encriptado {
-        width: 80%;
-        height: 15%;
+        width: 70%;
+        height: 13%;
         left: 10%;
         top: 80%;
-
+        margin-top: 35px;
     }
 
     .mensaje-encriptado {
-        margin: 23px;
-        width: 100%;
+        width: 70%;
         top: 5%;
     }
 
-    #titulo-mensaje {
-        margin: -10px;
-    }
-
-    #parrafo {
-        margin: -15px;
+    .texto {
+        width: 70%;
     }
 
     .encriptado img {
@@ -361,10 +418,6 @@ footer img:hover {
         visibility: hidden;
     }
 
-    .tituloWeb {
-        visibility: hidden;
-
-    }
 
     #mensaje-encriptado {
         padding: 1px;
@@ -381,5 +434,73 @@ footer img:hover {
 
     footer {
         font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 714px) {
+    .logo-alura {
+        visibility: hidden;
+    }
+
+    .tituloWeb {
+        visibility: hidden;
+    }
+
+    .texto {
+        margin: 10px;
+    }
+
+    .terminos {
+        margin: -80px;
+        margin-left: 5%;
+    }
+
+    .botones {
+        margin: -50px;
+        width: 70%;
+    }
+
+    .btn-desencriptar {
+        
+        background: white;
+        border: 1px solid rgb(27, 42, 128);
+        border-radius: 24px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        
+        text-align: center;
+        color: rgb(27, 42, 128);
+        margin-left: 5%;
+        transition: transform 0.4s ease;
+    }
+
+    .btn-desencriptar:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    .btn-encriptar {
+       
+        background-color: rgb(27, 42, 128);
+        border-radius: 24px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 17px;
+        
+        text-align: center;
+        color: white;
+        margin-left: 25%;
+        transition: transform 0.4s ease;
+    }
+
+    .btn-encriptar:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    .encriptado {
+        margin: -30px;
+        margin-left: 10px;
+        height: 20%;
     }
 }
