@@ -343,9 +343,7 @@ footer img:hover {
     }
 
     .tituloWeb {
-        font-size: 30px;
-        margin-left: 40%;
-        margin-top: 3%;
+       visibility: hidden;
     }
 
     .encriptar {
@@ -361,6 +359,7 @@ footer img:hover {
     }
 
     .terminos {
+        margin-left: 8%;
         margin-top: 20px;
         width: 80%;
         left: 12%;
@@ -370,11 +369,13 @@ footer img:hover {
     }
 
     .terminos p {
-        font-size: 20px;
+        font-size: 15px;
+        margin-top: -25px;
     }
 
     .botones {
-        margin-top: 30px;
+        margin-left: 5%;
+        margin-top: 7px;
         width: 70%;
         left: 10%;
         top: 70%;
@@ -386,6 +387,7 @@ footer img:hover {
         width: 50%;
         border-radius: 16px;
         font-size: 15px;
+       
     }
 
     .btn-encriptar:hover,
@@ -393,22 +395,26 @@ footer img:hover {
         margin: 0.3%;
         width: 47.5%;
         padding: 1.8%;
+        
     }
 
     .encriptado {
         width: 70%;
-        height: 13%;
+        height: 15%;
         left: 10%;
         top: 80%;
-        margin-top: 35px;
+        margin-top: 10px;
+        margin-left: 5%;
     }
 
     .mensaje-encriptado {
-        width: 70%;
+        width: 100%;
         top: 5%;
+        margin-left: 5%;
     }
 
     .texto {
+        margin-left: 5%;
         width: 70%;
     }
 
@@ -420,11 +426,11 @@ footer img:hover {
 
 
     #mensaje-encriptado {
-        padding: 1px;
+        padding: 10px;
     }
 
     #redes {
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .linkedin,
@@ -433,10 +439,10 @@ footer img:hover {
     }
 
     footer {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
-
+/* 
 @media only screen and (max-width: 714px) {
     .logo-alura {
         visibility: hidden;
@@ -503,4 +509,4 @@ footer img:hover {
         margin-left: 10px;
         height: 20%;
     }
-}
+} */
